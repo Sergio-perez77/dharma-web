@@ -1,3 +1,5 @@
+import Testimonials from "./components/Testimonials";
+
 const WHATSAPP_URL = "https://wa.me/5491156902502";
 
 export default function Home() {
@@ -237,6 +239,86 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* TESTIMONIOS */}
+        <Testimonials />
+
+        {/* CONTACTO */}
+          <section
+            id="contacto"
+            className="bg-[#9E9FCF] px-5 py-16 sm:px-6 sm:py-20 md:px-16 md:py-28"
+          >
+            <div className="mx-auto grid w-full max-w-6xl gap-12 md:grid-cols-2 md:items-center">
+              <div>
+                <p className="mb-4 font-sans text-sm font-bold uppercase tracking-[0.2em] text-[#2E2D55]">
+                  Contacto y turnos
+                </p>
+
+                <h2 className="mb-6 font-serif text-4xl leading-tight text-[#2E2D55] md:text-5xl">
+                  Empecemos este camino
+                </h2>
+
+                <p className="mb-8 max-w-xl font-sans text-lg leading-relaxed text-[#2E2D55]">
+                  Los turnos se coordinan por WhatsApp. Escribime y coordinamos el encuentro.
+                </p>
+
+                <a
+                  href="https://wa.me/5491156902502"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#FFFFFF", backgroundColor: "#4B4A7E" }}
+                  className="inline-flex items-center justify-center rounded-full px-8 py-4 font-sans text-base font-bold shadow-sm transition-colors hover:bg-[#2E2D55]"
+                >
+                  <span style={{ color: "#FFFFFF", opacity: 1 }}>
+                    Escribime por WhatsApp
+                  </span>
+                </a>
+              </div>
+
+              <div className="rounded-3xl border border-white/60 bg-[#FFFAF5] p-7 sm:p-9">
+                <div className="mb-7">
+                  <h3 className="mb-3 font-serif text-2xl text-[#4B4A7E]">
+                    Modalidad de atención
+                  </h3>
+
+                  <p className="font-sans leading-relaxed text-[#4B4A7E]">
+                    En CABA: presencial a domicilio u online.
+                    <br />
+                    Resto del país y exterior: online, por videollamada.
+                  </p>
+                </div>
+
+                <div className="mb-7 border-t border-[#EBC9DD] pt-6">
+                  <h3 className="mb-3 font-serif text-2xl text-[#4B4A7E]">
+                    Horarios
+                  </h3>
+
+                  <p className="font-sans text-[#4B4A7E]">
+                    Lunes a viernes, de 10 a 18 hs.
+                  </p>
+                </div>
+
+                <div className="border-t border-[#EBC9DD] pt-6">
+                  <h3 className="mb-3 font-serif text-2xl text-[#4B4A7E]">
+                    También podés encontrarme en
+                  </h3>
+
+                  <a
+                    href="https://www.instagram.com/dharma.terapias.holisticas/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-sans font-bold text-[#4B4A7E] underline underline-offset-4"
+                  >
+                    Instagram · @dharma.terapias.holisticas
+                  </a>
+
+                  <p className="mt-5 font-sans text-sm text-[#4B4A7E]">
+                    Marianela Vernetti · MN 10241
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
     </main>
   );
