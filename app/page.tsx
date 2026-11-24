@@ -144,7 +144,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-3">
+            <div className="grid items-start gap-8 md:grid-cols-3 [&>article]:min-h-[320px]">
               <article className="flex flex-col rounded-3xl border border-[#EBC9DD] bg-[#FFFAF5] p-8">
                 <h3 className="mb-5 font-serif text-2xl text-[#4B4A7E]">
                   Veterinaria con enfoque integral
