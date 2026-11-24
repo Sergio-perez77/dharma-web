@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --lavanda: #9E9FCF;
+  --violeta-profundo: #4B4A7E;
+  --violeta-oscuro: #2E2D55;
+  --rosa: #EBC9DD;
+  --crema: #FFFAF5;
+  --verde-salvia: #B8CDB0;
+
+  --background: var(--crema);
+  --foreground: var(--violeta-profundo);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-nunito);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--crema);
+  color: var(--violeta-profundo);
+  font-family: var(--font-nunito), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-fraunces), serif;
+  color: var(--violeta-profundo);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
 }
