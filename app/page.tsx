@@ -3,7 +3,7 @@ const WHATSAPP_URL = "https://wa.me/5491156902502";
 export default function Home() {
   return (
     <main>
-      <header className="flex flex-col gap-5 px-6 py-6 md:flex-row md:items-center md:justify-between md:px-16">
+      <header className="flex flex-col items-center gap-4 px-5 py-5 sm:px-6 md:flex-row md:justify-between md:gap-6 md:px-16 md:py-6">
         <a
           href="#inicio"
           className="font-serif text-3xl font-semibold tracking-wide text-[#4B4A7E]"
@@ -11,7 +11,7 @@ export default function Home() {
           DHARMA
         </a>
 
-        <nav className="flex flex-wrap gap-5 font-sans text-sm font-semibold text-[#4B4A7E]">
+        <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-center font-sans text-xs font-semibold text-[#4B4A7E] sm:text-sm md:justify-end">
           <a href="#quien-soy">Quién soy</a>
           <a href="#servicios">Servicios</a>
           <a href="#contacto">Contacto y turnos</a>
@@ -20,7 +20,7 @@ export default function Home() {
 
       <section
         id="inicio"
-        className="flex min-h-[650px] items-center bg-[#9E9FCF] px-6 py-20 md:px-16"
+        className="flex min-h-[550px] items-center bg-[#9E9FCF] px-5 py-14 sm:px-6 sm:py-16 md:min-h-[650px] md:px-16 md:py-20"
       >
         <div className="mx-auto w-full max-w-6xl">
           <div className="max-w-3xl">
@@ -28,11 +28,11 @@ export default function Home() {
               Veterinaria y terapias holísticas
             </p>
 
-            <h1 className="mb-8 font-serif text-5xl leading-tight text-[#2E2D55] md:text-7xl">
+            <h1 className="mb-6 font-serif text-4xl leading-tight text-[#2E2D55] sm:text-5xl md:mb-8 md:text-7xl">
               Bienestar integral para vos y tu compañero animal
             </h1>
 
-            <p className="mb-10 max-w-2xl font-sans text-lg leading-relaxed text-[#2E2D55] md:text-xl">
+            <p className="mb-8 max-w-2xl font-sans text-base leading-relaxed text-[#2E2D55] sm:text-lg md:mb-10 md:text-xl">
               Flores de Bach · Sanación con símbolos · Veterinaria con enfoque
               integral. Para animales y personas.
             </p>
@@ -47,8 +47,8 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-20 border-t border-[#EBC9DD] pt-8">
-            <p className="max-w-2xl font-serif text-2xl italic leading-relaxed text-[#2E2D55] md:text-3xl">
+          <div className="mt-14 border-t border-[#EBC9DD] pt-6 md:mt-20 md:pt-8">
+            <p className="max-w-2xl font-serif text-xl italic leading-relaxed text-[#2E2D55] sm:text-2xl md:text-3xl">
               “Sanar lo más sutil del ser para volver al equilibrio.”
             </p>
 
@@ -61,9 +61,9 @@ export default function Home() {
 
         <section
         id="quien-soy"
-        className="bg-[#FFFAF5] px-6 py-20 md:px-16 md:py-28"
+        className="bg-[#FFFAF5] px-5 py-14 sm:px-6 sm:py-16 md:px-16 md:py-28"
       >
-            <div className="mx-auto grid w-full max-w-6xl gap-12 md:grid-cols-2 md:items-center">
+            <div className="mx-auto grid w-full max-w-6xl gap-10 sm:gap-12 md:grid-cols-2 md:items-center">
               <div>
                 <p className="mb-4 font-sans text-sm font-bold uppercase tracking-[0.2em] text-[#4B4A7E]">
                   Conocé a Marianela
@@ -121,7 +121,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex min-h-[350px] items-center justify-center rounded-full border-2 border-[#EBC9DD] bg-[#9E9FCF]/20 p-8 text-center md:min-h-[450px]">
+              <div className="mx-auto flex min-h-[280px] w-full max-w-[280px] items-center justify-center rounded-full border-2 border-[#EBC9DD] bg-[#9E9FCF]/20 p-6 text-center sm:min-h-[350px] sm:max-w-[350px] sm:p-8 md:min-h-[450px] md:max-w-none">
                 <p className="max-w-xs font-serif text-xl italic text-[#4B4A7E]">
                   Aquí irá el retrato de Marianela.
                 </p>
@@ -131,7 +131,7 @@ export default function Home() {
 
         <section
         id="servicios"
-        className="bg-[#9E9FCF] px-6 py-20 md:px-16 md:py-28"
+        className="bg-[#9E9FCF] px-5 py-14 sm:px-6 sm:py-16 md:px-16 md:py-28"
       >
           <div className="mx-auto w-full max-w-6xl">
             <div className="mb-14 max-w-3xl">
@@ -144,8 +144,8 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="grid items-start gap-8 md:grid-cols-3 [&>article]:min-h-[320px]">
-              <article className="flex flex-col rounded-3xl border border-[#EBC9DD] bg-[#FFFAF5] p-8">
+            <div className="grid items-start gap-5 sm:gap-6 md:grid-cols-3 md:gap-8 [&>article]:min-h-[280px] md:[&>article]:min-h-[320px]">
+              <article className="flex flex-col rounded-3xl border border-[#EBC9DD] bg-[#FFFAF5] p-6 sm:p-8">
                 <h3 className="mb-5 font-serif text-2xl text-[#4B4A7E]">
                   Veterinaria con enfoque integral
                 </h3>
@@ -175,7 +175,7 @@ export default function Home() {
                 </details>
               </article>
 
-              <article className="flex flex-col rounded-3xl border border-[#EBC9DD] bg-[#FFFAF5] p-8">
+              <article className="flex flex-col rounded-3xl border border-[#EBC9DD] bg-[#FFFAF5] p-6 sm:p-8">
                 <h3 className="mb-5 font-serif text-2xl text-[#4B4A7E]">
                   Terapia floral para humanos y animales
                 </h3>
@@ -207,7 +207,7 @@ export default function Home() {
                 </details>
               </article>
 
-              <article className="flex flex-col rounded-3xl border border-[#EBC9DD] bg-[#FFFAF5] p-8">
+              <article className="flex flex-col rounded-3xl border border-[#EBC9DD] bg-[#FFFAF5] p-6 sm:p-8">
                 <h3 className="mb-5 font-serif text-2xl text-[#4B4A7E]">
                   Sanación con símbolos
                 </h3>
