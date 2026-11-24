@@ -19,7 +19,7 @@ const testimonials = [
     id: 3,
     name: "Mía y Simba",
     detail: "",
-    text: `Conocí a Marian trabajando juntas, cuando aún no era la profesional que es hoy, pero desde entonces se notaba su amor y dedicación. Muchos años más tarde, se convirtió en la profesional holística que ayuda a nuestros de vida, Mia y Simba, a superar sus ansiedades, miedos, y en el caso de Simba, sus ataques de dermatitis atópica.
+    text: `Conocí a Marian trabajando juntas, cuando aún no era la profesional que es hoy, pero desde entonces se notaba su amor y dedicación. Muchos años más tarde, se convirtió en la profesional holística que ayuda a nuestros compañeros de vida, Mia y Simba, a superar sus ansiedades, miedos, y en el caso de Simba, sus ataques de dermatitis atópica.
 
 Hace poco, me empezó a acompañar a mí a atravesar un accidente leve que tuve.
 

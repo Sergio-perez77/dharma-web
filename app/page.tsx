@@ -85,7 +85,7 @@ export default function Home() {
                   <p>
                     Ese llamado me llevó a estudiar <strong>Veterinaria</strong>, y en 2019 me
                     recibí. Con el tiempo entendí que <strong>el bienestar no se juega
-                    solo en el cuerpoel bienestar no se juega
+                    solo en el cuerpo el bienestar no se juega
                     solo en el cuerpo</strong>: las emociones, la energía y el vínculo
                     entre las personas y sus animales también forman parte de la
                     salud.
@@ -319,6 +319,32 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          
+          {/* FOOTER */}
+          <footer className="bg-[#4B4A7E] px-5 py-3 sm:px-6">
+            <div className="mx-auto flex w-full max-w-6xl flex-col items-center text-center">
+              <h2 className="font-serif text-xl font-semibold tracking-widest text-[#FFFAF5]">
+                DHARMA
+              </h2>
+              <p className="mt-1 font-sans text-xs text-[#EBC9DD]">
+                Veterinaria y terapias holísticas
+              </p>
+              <p className="mt-2 max-w-xl font-serif text-sm italic leading-relaxed text-[#FFFAF5]">
+                Sanar lo más sutil del ser para volver al equilibrio.
+              </p>
+              <div className="my-2 h-px w-10 bg-[#9E9FCF]" />
+              <p className="font-serif text-sm text-[#FFFAF5]">
+                Marianela Vernetti
+              </p>
+              <p className="mt-0.5 font-sans text-xs text-[#EBC9DD]">
+                MN 10241
+              </p>
+              <p className="mt-3 font-sans text-[10px] text-[#EBC9DD]">
+                © 2026 DHARMA. Todos los derechos reservados.
+              </p>
+            </div>
+          </footer>
 
     </main>
   );
