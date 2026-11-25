@@ -96,8 +96,7 @@ export default function Home() {
 
                   <p>
                     Ese llamado me llevó a estudiar <strong>Veterinaria</strong>, y en 2019 me
-                    recibí. Con el tiempo entendí que <strong>el bienestar no se juega
-                    solo en el cuerpo el bienestar no se juega
+                    recibí. Con el tiempo entendí que <strong> el bienestar no se juega
                     solo en el cuerpo</strong>: las emociones, la energía y el vínculo
                     entre las personas y sus animales también forman parte de la
                     salud.
