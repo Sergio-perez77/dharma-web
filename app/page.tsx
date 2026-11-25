@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Testimonials from "./components/Testimonials";
 
 const WHATSAPP_URL = "https://wa.me/5491156902502";
@@ -5,12 +6,23 @@ const WHATSAPP_URL = "https://wa.me/5491156902502";
 export default function Home() {
   return (
     <main>
-      <header className="flex flex-col items-center gap-4 px-5 py-5 sm:px-6 md:flex-row md:justify-between md:gap-6 md:px-16 md:py-6">
+      <header className="flex flex-col items-center gap-1 px-5 py-1 sm:px-6 md:flex-row md:justify-between md:gap-6 md:px-16 md:py-2">
         <a
           href="#inicio"
-          className="font-serif text-3xl font-semibold tracking-wide text-[#4B4A7E]"
+          className="flex flex-col items-center gap-0"
         >
-          DHARMA
+          <Image
+            src="/images/InShot-dharma.png"
+            alt="Logo Dharma"
+            width={110}
+            height={110}
+            priority
+            className="h-auto w-16 object-contain sm:w-20"
+          />
+
+          <span className="font-serif text-2xl font-semibold tracking-wide text-[#4B4A7E]">
+            DHARMA
+          </span>
         </a>
 
         <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-center font-sans text-xs font-semibold text-[#4B4A7E] sm:text-sm md:justify-end">
