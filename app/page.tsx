@@ -6,7 +6,7 @@ const WHATSAPP_URL = "https://wa.me/5491156902502";
 export default function Home() {
   return (
     <main>
-      <header className="flex flex-col items-center gap-1 px-5 py-1 sm:px-6 md:flex-row md:justify-between md:gap-6 md:px-16 md:py-2">
+      <header className="flex flex-col items-center gap-1 px-5 pt-0 pb-1 sm:px-6 md:flex-row md:justify-between md:gap-6 md:px-16 md:pt-1 md:pb-2">
         <a
           href="#inicio"
           className="flex flex-col items-center gap-0"
@@ -20,7 +20,7 @@ export default function Home() {
             className="h-auto w-16 object-contain sm:w-20"
           />
 
-          <span className="font-serif text-2xl font-semibold tracking-wide text-[#4B4A7E]">
+          <span className="-mt-3 font-serif text-2xl font-semibold leading-none tracking-wide text-[#4B4A7E]">
             DHARMA
           </span>
         </a>
