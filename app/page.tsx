@@ -17,7 +17,7 @@ export default function Home() {
             width={110}
             height={110}
             priority
-            className="h-auto w-16 object-contain sm:w-20"
+            className="-mt-2 -mb-2 h-auto w-16 object-contain sm:w-20"
           />
 
           <span className="-mt-3 font-serif text-2xl font-semibold leading-none tracking-wide text-[#4B4A7E]">
