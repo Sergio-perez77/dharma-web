@@ -83,7 +83,7 @@ export default function Home() {
 
         <section
         id="quien-soy"
-        className="bg-[#FFFAF5] px-5 py-14 sm:px-6 sm:py-16 md:px-16 md:py-28"
+        className="flex min-h-[calc(100svh-47px)] items-center bg-[#FFFAF5] px-5 py-8 sm:px-6 sm:py-10 md:px-16 md:py-10"
       >
             <div className="mx-auto grid w-full max-w-6xl gap-10 sm:gap-12 md:grid-cols-2 md:items-center">
               <div>
@@ -132,14 +132,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="mt-8 border-t border-[#EBC9DD] pt-5">
-                  <p className="font-serif text-xl italic text-[#4B4A7E]">
-                    Marianela Vernetti
-                  </p>
-                  <p className="mt-1 font-sans text-sm font-semibold text-[#4B4A7E]">
-                    MN 10241
-                  </p>
-                </div>
+                
               </div>
 
               <div className="mx-auto w-full max-w-[420px]">
@@ -150,6 +143,15 @@ export default function Home() {
                   height={1100}
                   className="h-auto w-full rounded-[2rem] object-cover shadow-lg"
                 />
+
+                <div className="mt-8 border-t border-[#EBC9DD] pt-5">
+                  <p className="font-serif text-xl italic text-[#4B4A7E]">
+                    Marianela Vernetti
+                  </p>
+                  <p className="mt-1 font-sans text-sm font-semibold text-[#4B4A7E]">
+                    MN 10241
+                  </p>
+                </div>
               </div>
             </div>
         </section>
