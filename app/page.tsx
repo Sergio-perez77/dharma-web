@@ -6,18 +6,18 @@ const WHATSAPP_URL = "https://wa.me/5491156902502";
 export default function Home() {
   return (
     <main>
-      <header className="flex flex-col items-center gap-3 px-5 py-3 sm:px-6 md:flex-row md:justify-between md:gap-6 md:px-16">
+      <header className="flex flex-col items-center gap-1 px-5 py-1 sm:px-6 md:flex-row md:justify-between md:gap-3 md:px-16">
         <a
           href="#inicio"
           className="flex items-center gap-3"
         >
           <Image
-            src="/images/InShot-dharma.png"
+            src="/images/dharma-completo.png"
             alt="Logo Dharma"
             width={110}
             height={110}
             priority
-            className="h-12 w-12 shrink-0 object-contain sm:h-14 sm:w-14"
+            className="h-20 w-20 shrink-0 object-contain sm:h-22 sm:w-22 md:h-20 md:w-20"
           />
 
           <span className="font-serif text-lg font-semibold leading-tight tracking-wide text-[#4B4A7E] sm:text-xl md:text-2xl">
@@ -35,13 +35,9 @@ export default function Home() {
 
       <section
         id="inicio"
-        className="flex min-h-[550px] items-center bg-[#9E9FCF] px-5 py-14 sm:px-6 sm:py-16 md:min-h-[650px] md:px-16 md:py-20"
-      >
+        className="flex min-h-[calc(100svh-80px)] items-center bg-[#9E9FCF] px-5 py-8 sm:px-6 sm:py-10 md:min-h-[calc(100svh-90px)] md:px-16 md:py-10">
         <div className="mx-auto w-full max-w-6xl">
           <div className="max-w-3xl">
-            <p className="mb-6 font-sans text-sm font-bold uppercase tracking-[0.2em] text-[#2E2D55]">
-              Veterinaria y terapias holísticas
-            </p>
 
             <h1 className="mb-6 font-serif text-4xl leading-tight text-[#2E2D55] sm:text-5xl md:mb-8 md:text-7xl">
               Bienestar integral para vos y tu compañero animal
