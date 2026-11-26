@@ -48,7 +48,7 @@ export default function Home() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-full bg-[#4B4A7E] px-7 py-3 font-sans text-sm font-semibold !text-white transition hover:bg-[#2E2D55]"
+                className="inline-block rounded-full bg-[#B8CDB0] px-7 py-3 font-sans text-sm font-semibold !text-white transition hover:bg-[#2E2D55]"
               >
                 Reservá tu turno
               </a>
