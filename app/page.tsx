@@ -6,19 +6,27 @@ const WHATSAPP_URL = "https://wa.me/5491156902502";
 export default function Home() {
   return (
     <main>
-      <header className="flex flex-col items-center gap-1 px-5 py-1 sm:px-6 md:flex-row md:justify-between md:gap-3 md:px-16">
+      <header className="flex flex-col items-center gap-0 bg-[#9E9FCF] px-5 py-0 sm:px-6 md:flex-row md:justify-between md:gap-2 md:px-16">
         <a
           href="#inicio"
           className="flex items-center gap-3"
         >
-          <Image
-            src="/images/dharma-completo.png"
-            alt="Logo Dharma"
-            width={110}
-            height={110}
-            priority
-            className="h-20 w-20 shrink-0 object-contain sm:h-22 sm:w-22 md:h-20 md:w-20"
-          />
+          <div
+            className="flex h-25 w-25 shrink-0 items-center justify-center rounded-full p-0"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(75,74,126,1) 0%, rgba(75,74,126,1) 55%, rgba(75,74,126,0.85) 68%, rgba(75,74,126,0.35) 85%, rgba(158,159,207,0) 100%)",
+            }}
+          >
+            <Image
+              src="/images/dharma-completo.png"
+              alt="Logo Dharma"
+              width={110}
+              height={110}
+              priority
+              className="h-28 w-28 object-contain"
+            />
+          </div>
 
           <span className="font-serif text-lg font-semibold leading-tight tracking-wide text-[#4B4A7E] sm:text-xl md:text-2xl">
             DHARMA TERAPIAS HOLÍSTICAS
@@ -35,39 +43,51 @@ export default function Home() {
 
       <section
         id="inicio"
-        className="flex min-h-[calc(100svh-80px)] items-center bg-[#9E9FCF] px-5 py-8 sm:px-6 sm:py-10 md:min-h-[calc(100svh-90px)] md:px-16 md:py-10">
-        <div className="mx-auto w-full max-w-6xl">
-          <div className="max-w-3xl">
+        className="flex min-h-[calc(100svh-128px)] items-center bg-[#9E9FCF] px-5 py-5 sm:px-6 sm:py-6 md:min-h-[calc(100svh-128px)] md:px-16 md:py-6">
+        <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-6 md:grid-cols-[1.1fr_0.9fr] md:gap-10">
+            <div className="max-w-3xl">
+              <h1 className="mb-4 font-serif text-3xl leading-tight text-[#2E2D55] sm:text-4xl md:text-5xl lg:text-6xl">
+                Bienestar integral para vos y tu compañero animal
+              </h1>
 
-            <h1 className="mb-6 font-serif text-4xl leading-tight text-[#2E2D55] sm:text-5xl md:mb-8 md:text-7xl">
-              Bienestar integral para vos y tu compañero animal
-            </h1>
+              <p className="mb-6 max-w-2xl font-sans text-sm leading-relaxed text-[#2E2D55] sm:text-base md:text-lg">
+                Flores de Bach · Sanación con símbolos · Veterinaria con enfoque
+                integral. Para animales y personas.
+              </p>
 
-            <p className="mb-8 max-w-2xl font-sans text-base leading-relaxed text-[#2E2D55] sm:text-lg md:mb-10 md:text-xl">
-              Flores de Bach · Sanación con símbolos · Veterinaria con enfoque
-              integral. Para animales y personas.
-            </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full bg-[#4B4A7E] px-7 py-3 font-sans text-sm font-semibold text-white transition hover:bg-[#2E2D55]"
+              >
+                Reservá tu turno
+              </a>
 
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full bg-[#B8CDB0] px-9 py-4 font-sans font-bold text-[#2E2D55] transition-colors hover:bg-[#FFFAF5]"
-            >
-              Reservá tu turno
-            </a>
+              
+            </div>
+
+            <div className="mx-auto w-full max-w-[420px] md:max-w-none">
+              <Image
+                src="/images/imagen-marianela-y-gato.jpeg"
+                alt="Marianela junto a su gato"
+                width={900}
+                height={1100}
+                priority
+                className="h-auto max-h-[55svh] w-full rounded-[2rem] object-cover object-center shadow-lg md:max-h-[65svh]"
+              />
+            </div>
+
+            <div className="mt-7 border-t border-[#EBC9DD] pt-4">
+                <p className="max-w-2xl font-serif text-lg italic leading-relaxed text-[#2E2D55] sm:text-xl md:text-2xl">
+                  “Sanar lo más sutil del ser para volver al equilibrio.”
+                </p>
+                <p className="mt-2 font-sans text-sm font-semibold text-[#2E2D55]">
+                  Marianela Vernetti
+                </p>
+              </div>
+
           </div>
-
-          <div className="mt-14 border-t border-[#EBC9DD] pt-6 md:mt-20 md:pt-8">
-            <p className="max-w-2xl font-serif text-xl italic leading-relaxed text-[#2E2D55] sm:text-2xl md:text-3xl">
-              “Sanar lo más sutil del ser para volver al equilibrio.”
-            </p>
-
-            <p className="mt-3 font-sans text-sm font-semibold text-[#2E2D55]">
-              Marianela Vernetti
-            </p>
-          </div>
-        </div>
       </section>
 
         <section
