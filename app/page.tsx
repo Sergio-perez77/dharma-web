@@ -85,7 +85,7 @@ export default function Home() {
         id="quien-soy"
         className="flex min-h-[calc(100svh-47px)] items-center bg-[#FFFAF5] px-5 py-8 sm:px-6 sm:py-10 md:px-16 md:py-10"
       >
-            <div className="mx-auto grid w-full max-w-5xl gap-10 sm:gap-12 md:grid-cols-1 md:items-start">
+            <div className="mx-auto grid w-full max-w-6xl items- gap-10 sm:gap-12 md:grid-cols-[1.2fr_0.8fr]">
               <div>
                 <p className="mb-4 font-sans text-sm font-bold uppercase tracking-[0.2em] text-[#4B4A7E]">
                   Conocé a Marianela
@@ -133,6 +133,23 @@ export default function Home() {
                 </div>
 
                 
+              </div>
+
+              <div className="mx-auto w-full max-w-[420px] text-center">
+                <Image
+                  src="/images/marianela-quien-soy.jpeg"
+                  alt="Marianela Vernetti"
+                  width={900}
+                  height={1100}
+                  className="h-auto w-full rounded-3xl object-cover shadow-lg"
+                />
+
+                <p className="mt-4 font-serif text-lg font-semibold text-[#4B4A7E]">
+                  Marianela Vernetti
+                </p>
+                <p className="font-sans text-sm text-[#4B4A7E]">
+                  · MN 10241
+                </p>
               </div>
 
               
