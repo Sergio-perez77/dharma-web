@@ -6,10 +6,10 @@ const WHATSAPP_URL = "https://wa.me/5491156902502";
 export default function Home() {
   return (
     <main>
-      <header className="flex flex-col items-center gap-1 px-5 pt-0 pb-1 sm:px-6 md:flex-row md:justify-between md:gap-6 md:px-16 md:pt-1 md:pb-2">
+      <header className="flex flex-col items-center gap-3 px-5 py-3 sm:px-6 md:flex-row md:justify-between md:gap-6 md:px-16">
         <a
           href="#inicio"
-          className="flex flex-col items-center gap-0"
+          className="flex items-center gap-3"
         >
           <Image
             src="/images/InShot-dharma.png"
@@ -17,17 +17,18 @@ export default function Home() {
             width={110}
             height={110}
             priority
-            className="-mt-2 -mb-2 h-auto w-16 object-contain sm:w-20"
+            className="h-12 w-12 shrink-0 object-contain sm:h-14 sm:w-14"
           />
 
-          <span className="-mt-3 font-serif text-2xl font-semibold leading-none tracking-wide text-[#4B4A7E]">
-            DHARMA
+          <span className="font-serif text-lg font-semibold leading-tight tracking-wide text-[#4B4A7E] sm:text-xl md:text-2xl">
+            DHARMA TERAPIAS HOLÍSTICAS
           </span>
         </a>
 
-        <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-center font-sans text-xs font-semibold text-[#4B4A7E] sm:text-sm md:justify-end">
+        <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-center font-sans text-xs font-semibold text-[#4B4A7E] sm:text-sm md:justify-end">
           <a href="#quien-soy">Quién soy</a>
           <a href="#servicios">Servicios</a>
+          <a href="#testimonios">Testimonios</a>
           <a href="#contacto">Contacto y turnos</a>
         </nav>
       </header>
