@@ -85,7 +85,7 @@ export default function Home() {
         id="quien-soy"
         className="flex min-h-[calc(100svh-47px)] items-center bg-[#FFFAF5] px-5 py-8 sm:px-6 sm:py-10 md:px-16 md:py-10"
       >
-            <div className="mx-auto grid w-full max-w-6xl gap-10 sm:gap-12 md:grid-cols-2 md:items-center">
+            <div className="mx-auto grid w-full max-w-6xl gap-10 sm:gap-12 md:grid-cols-2 md:items-start">
               <div>
                 <p className="mb-4 font-sans text-sm font-bold uppercase tracking-[0.2em] text-[#4B4A7E]">
                   Conocé a Marianela
