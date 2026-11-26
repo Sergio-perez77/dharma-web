@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Testimonials from "./components/Testimonials";
 
 const WHATSAPP_URL = "https://wa.me/5491156902502";
@@ -7,10 +8,15 @@ export default function Home() {
   return (
     <main>
       <header className="flex flex-col items-center gap-0 bg-[#FFFAF5] px-5 py-2 sm:px-6 md:flex-row md:justify-between md:gap-2 md:px-16">
-        <a
-          href="#inicio"
-          className="flex items-center gap-3"
-        >
+        <a href="#inicio" className="flex items-center gap-3">
+          <Image
+            src="/images/InShot-dharma.png"
+            alt="Logo DHARMA"
+            width={150}
+            height={80}
+            priority
+            className="h-14 w-auto object-contain"
+          />
           <span className="font-serif text-lg font-semibold leading-tight tracking-wide text-[#4B4A7E] sm:text-xl md:text-2xl">
             DHARMA TERAPIAS HOLÍSTICAS
           </span>
@@ -51,21 +57,15 @@ export default function Home() {
             </div>
 
             <div className="mx-auto flex w-full max-w-[420px] flex-col items-center md:max-w-none">
-                <div
-                    className="flex h-64 w-64 shrink-0 items-center justify-center rounded-full p-0"
-                    style={{
-                      background:
-                        "radial-gradient(circle, rgba(75,74,126,1) 0%, rgba(75,74,126,1) 55%, rgba(75,74,126,0.85) 68%, rgba(75,74,126,0.35) 85%, rgba(158,159,207,0) 100%)",
-                    }}
-                  >
-                    <Image
-                      src="/images/dharma-completo.png"
-                      alt="Logo Dharma"
-                      width={700}
-                      height={700}
-                      priority
-                      className="h-56 w-56 object-contain"
-                    />
+                <div className="h-64 w-64 shrink-0 overflow-hidden rounded-full border-4 border-[#EBC9DD] shadow-lg">
+                  <Image
+                    src="/images/imagen-marianela-y-gato.jpeg"
+                    alt="Marianela junto a su gato"
+                    width={900}
+                    height={1100}
+                    priority
+                    className="h-full w-full object-cover"
+                  />
                 </div>
 
                 <div className="mt-4 border-t border-[#EBC9DD] pt-4 text-center">
@@ -85,7 +85,7 @@ export default function Home() {
         id="quien-soy"
         className="flex min-h-[calc(100svh-47px)] items-center bg-[#FFFAF5] px-5 py-8 sm:px-6 sm:py-10 md:px-16 md:py-10"
       >
-            <div className="mx-auto grid w-full max-w-6xl gap-10 sm:gap-12 md:grid-cols-2 md:items-start">
+            <div className="mx-auto grid w-full max-w-5xl gap-10 sm:gap-12 md:grid-cols-1 md:items-start">
               <div>
                 <p className="mb-4 font-sans text-sm font-bold uppercase tracking-[0.2em] text-[#4B4A7E]">
                   Conocé a Marianela
@@ -135,24 +135,7 @@ export default function Home() {
                 
               </div>
 
-              <div className="mx-auto w-full max-w-[420px]">
-                <Image
-                  src="/images/imagen-marianela-y-gato.jpeg"
-                  alt="Marianela junto a su gato"
-                  width={900}
-                  height={1100}
-                  className="h-auto w-full rounded-[2rem] object-cover shadow-lg"
-                />
-
-                <div className="mt-8 border-t border-[#EBC9DD] pt-5">
-                  <p className="font-serif text-xl italic text-[#4B4A7E]">
-                    Marianela Vernetti
-                  </p>
-                  <p className="mt-1 font-sans text-sm font-semibold text-[#4B4A7E]">
-                    MN 10241
-                  </p>
-                </div>
-              </div>
+              
             </div>
         </section>
 
@@ -182,24 +165,12 @@ export default function Home() {
                   el bienestar físico y emocional de animales.
                 </p>
 
-                <details className="mt-auto">
-                  <summary className="inline-block cursor-pointer list-none rounded-full bg-[#B8CDB0] px-6 py-3 font-sans font-bold text-[#2E2D55]">
-                    Conocé más
-                  </summary>
-
-                  <div className="mt-5 border-t border-[#EBC9DD] pt-5 font-sans leading-relaxed text-[#4B4A7E]">
-                    <p>
-                      Atención veterinaria que integra la medicina convencional con
-                      herramientas holísticas, contemplando el bienestar físico y emocional
-                      de cada animal.
-                    </p>
-
-                    <p className="mt-4">
-                      Modalidad presencial a domicilio en CABA y online. Fuera de CABA,
-                      atención online.
-                    </p>
-                  </div>
-                </details>
+                <Link
+                  href="/servicios/veterinaria-con-enfoque-integral"
+                  className="mt-auto inline-block w-fit rounded-full bg-[#B8CDB0] px-6 py-3 font-sans font-bold text-[#2E2D55] transition hover:bg-[#A5BE9C]"
+                >
+                  Conocé más
+                </Link>
               </article>
 
               <article className="flex flex-col rounded-3xl border border-[#EBC9DD] bg-[#FFFAF5] p-6 sm:p-8">
@@ -212,26 +183,12 @@ export default function Home() {
                   vínculo entre ambos.
                 </p>
 
-                <details className="mt-auto">
-                  <summary className="inline-block cursor-pointer list-none rounded-full bg-[#B8CDB0] px-6 py-3 font-sans font-bold text-[#2E2D55]">
-                    Conocé más
-                  </summary>
-
-                  <div className="mt-5 border-t border-[#EBC9DD] pt-5 font-sans leading-relaxed text-[#4B4A7E]">
-                    <p>
-                      Terapia floral con Flores de Bach para acompañar a una persona,
-                      a un animal o a ambos, contemplando también el vínculo entre ellos.
-                    </p>
-
-                    <p className="mt-4">
-                      La propuesta incluye sesiones y un mensaje final a modo de oráculo.
-                    </p>
-
-                    <p className="mt-4">
-                      Modalidad online.
-                    </p>
-                  </div>
-                </details>
+                <Link
+                  href="/servicios/terapia-floral"
+                  className="mt-auto inline-block w-fit rounded-full bg-[#B8CDB0] px-6 py-3 font-sans font-bold text-[#2E2D55] transition hover:bg-[#A5BE9C]"
+                >
+                  Conocé más
+                </Link>
               </article>
 
               <article className="flex flex-col rounded-3xl border border-[#EBC9DD] bg-[#FFFAF5] p-6 sm:p-8">
@@ -244,22 +201,12 @@ export default function Home() {
                   personales.
                 </p>
 
-                <details className="mt-auto">
-                  <summary className="inline-block cursor-pointer list-none rounded-full bg-[#B8CDB0] px-6 py-3 font-sans font-bold text-[#2E2D55]">
-                    Conocé más
-                  </summary>
-
-                  <div className="mt-5 border-t border-[#EBC9DD] pt-5 font-sans leading-relaxed text-[#4B4A7E]">
-                    <p>
-                      Trabajo energético con símbolos orientado a armonizar,
-                      desbloquear y ordenar procesos.
-                    </p>
-
-                    <p className="mt-4">
-                      Modalidad online.
-                    </p>
-                  </div>
-                </details>
+                <Link
+                  href="/servicios/sanacion-con-simbolos"
+                  className="mt-auto inline-block w-fit rounded-full bg-[#B8CDB0] px-6 py-3 font-sans font-bold text-[#2E2D55] transition hover:bg-[#A5BE9C]"
+                >
+                  Conocé más
+                </Link>
               </article>
             </div>
           </div>
