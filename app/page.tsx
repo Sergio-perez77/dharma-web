@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <main>
       <header className="flex flex-col items-center gap-0 bg-[#FFFAF5] px-5 py-2 sm:px-6 md:flex-row md:justify-between md:gap-2 md:px-16">
-        <a href="#inicio" className="flex items-center gap-3">
+        <a href="#inicio" className="flex h-14 items-center gap-3 overflow-visible">
           <Image
             src="/images/InShot-dharma.png"
             alt="Logo DHARMA"
-            width={150}
-            height={80}
+            width={170}
+            height={90}
             priority
-            className="h-14 w-auto object-contain"
+            className="h-[105px] w-auto object-contain"
           />
           <span className="font-serif text-lg font-semibold leading-tight tracking-wide text-[#4B4A7E] sm:text-xl md:text-2xl">
             DHARMA TERAPIAS HOLÍSTICAS
